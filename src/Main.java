@@ -16,6 +16,8 @@ public class Main {
         System.out.println("Enter loan term in years");
         int term_in_years = scanner.nextInt();
 
+        scanner.close();
+
         float monthly_interest_rate = annual_interest_rate / MONTHS_IN_A_YEAR;
         int number_of_payments = term_in_years * MONTHS_IN_A_YEAR;
 
